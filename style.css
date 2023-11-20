@@ -128,11 +128,29 @@ nav {
     color: white;
 }
 
+.white-background {
+    background-color: #ffffff;
+}
+
+.gray-background {
+    background-color:  #f6f6f6
+}
 
 /*MAIN*/
 
 main {
     font-size: 21px;
+}
+
+.waves {
+    background-image: url(img/wave.svg);
+    width: 100%;
+    height: 200px;
+    opacity: 4%;
+}
+
+.waves.white {
+    transform: rotate(180deg);
 }
 
 section {
@@ -141,13 +159,6 @@ section {
     justify-content: center;
 }
 
-.white-background {
-    background-color: #ffffff;
-}
-
-.gray-background {
-    background-color:  #f6f6f6
-}
 
 .flex-container {
     width: 1200px;
