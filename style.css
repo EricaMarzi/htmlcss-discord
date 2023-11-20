@@ -3,28 +3,41 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    font-family: Whitney, 'Helvetica Neue', Helvetica, Arial, sans-serif;
 }
 
 /*Utility*/
+body {
+    font-family: Whitney, 'Helvetica Neue', Helvetica, Arial, sans-serif;
+}
+
+button {
+    border: 1px solid transparent;
+    cursor: pointer;
+    background-color: white;
+}
 
 ul {
     list-style-type: none;
-}
-
-a {
-    text-decoration: none;
-}
-
-.flex {
-    display: flex;
 }
 
 li > a {
     color: white;
 }
 
-/* HEADER*/
+a {
+    text-decoration: none;
+}
+
+a :hover {
+    text-decoration: underline; /* Capire perché non va*/
+}
+
+.flex {
+    display: flex;
+}
+
+
+/* Header */
 
 header {
     background-color: #255ee9;
@@ -39,31 +52,38 @@ nav {
     margin: 15px;
     width: 1200px;
     height: 50px;
-    background-color: #d5ad4a;
     display: flex;
     align-items: center;
 }
 
 #link {
-    width: 50%;
-    border-top: 3px dotted #7c5a05;
-    border-bottom: 3px dotted #7c5a05;
+    flex-grow: 1;
 }
 
 .list.flex {
     justify-content: space-around;
 }
 
-
-#logo, #login {
+.logo, #login-container {
     width: 25%;
-    border: 3px dotted #7c5a05;
 }
+
+#login-container {
+    text-align: right;
+}
+
+.login-btn {
+    background-color: white;
+    font-size: 16px;
+    padding: 10px;
+    border-radius: 20px;
+}
+
+/* Jumbotron */
 
 #header-image {
     background-image: url(img/jumbo.png);
     background-size: cover;
-    background-color: #4444c1;
     width: 100%;
     height: 600px;
     display: flex;
@@ -71,12 +91,43 @@ nav {
     align-items: center;
 }
 
-#heading {
-    background-color: #d368d3;
-    width: 850px;
+#jumbotron {
+    color: white;
+    text-align: center;
+    font-size: 22px;
+    width: 50%;
     height: 400px;
-    border: 3px dotted #613461;
 }
+
+#jumbotron > h1 {
+    font-size: 60px;
+    padding: 50px 0 ;
+}
+
+#jumbotron > p {
+    padding: 0 50px;
+}
+
+/*Specifiche bottoni jumbotron*/
+
+.actions-btn{
+    padding-top: 30px;
+    display: flex;
+    justify-content: center;
+    gap: 25px;
+}
+
+.actions-btn > button {
+    font-size: 20px;
+    padding: 20px;
+    border-radius: 40px;
+} 
+
+.open-in-browser {
+    background-color: #23272a;
+    color: white;
+}
+
 
 /*MAIN*/
 

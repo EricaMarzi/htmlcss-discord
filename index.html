@@ -3,19 +3,22 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="widht=device-width, initial-scale=1.0">
-    <title>Discord</title>
+    <title>Discord | Il tuo luogo ideale per parlare e ritrovarsi</title>
 
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css" integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
     <link rel="icon" href="https://cdn.icon-icons.com/icons2/3053/PNG/512/discord_macos_bigsur_icon_190238.png">
     <link rel="stylesheet" href="style.css">
-    <title>Discord</title>
 </head>
 
 <body>
     <header>
         <nav>
+            <!--Logo-->
             <div id="navigation-bar">
-                <div id="logo"><img src="img/logo.svg" alt="Logo Discord"></div>
+                <div class="logo">
+                    <img src="img/logo.svg" alt="Logo Discord">
+                </div>
+                <!--Collegamenti-->
                 <div id="link">
                     <ul class="list flex">
                         <li><a href="https://discord.com/download">Scarica</a></li>
@@ -25,14 +28,31 @@
                         <li><a href="https://support.discord.com/hc/it">Assistenza</a></li>
                     </ul>
                 </div>
-                <div id="login"></div>
+                <!--Tasto di login-->
+                <div id="login-container">
+                    <button class="login-btn">Accedi</button>
+                </div>
             </div>
         </nav>
        <div id="header-image">
-            <div id="heading"></div>
+            <div id="jumbotron">
+                <h1>Il tuo posto per parlare</h1>
+                <p>Che tu faccia parte di un club scolastico, un gruppo di gamer, comunità artistica mondiale, o semplicemente di un piccolo gruppo di amici che vuole passare il tempo assieme, Discord rende più facile chiacchierare ogni giorno e ritrovarsi più spesso.</p>
+
+                <!--Bottoni-->
+                <div class="actions-btn">
+                    <button class="download">
+                        <i class="fa-solid fa-down-long"></i>
+                        Scarica per Windows
+                    </button>
+                    <button class="open-in-browser">Apri Discord nel tuo browser</button>
+                </div>
+            </div>
        </div>
     </header>
 
+
+    <!--Main-->
     <main>
         <section class="odd-content">
             <div class="flex-container">
