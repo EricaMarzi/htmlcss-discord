@@ -249,6 +249,38 @@ footer {
     padding-right: 40px;
 }
 
+.footer.flex {
+    align-items: baseline;
+}
+
+.flag {
+    height: 15px;
+    vertical-align: middle;
+}
+
+.language {
+    margin: 20px 0;
+    display: inline-block;
+    color: white;
+    font-size: 14px;
+    line-height: 30px;
+    vertical-align: middle;
+}
+
+.icon {
+    display: flex;
+    gap: 20px;
+    font-size: 20px;
+}
+
+.icon > * {
+    color: white;
+}
+
+.icon a:hover {
+    text-decoration: none;
+}
+
 .right-box {
     width: 70%;
     height: fit-content;
