@@ -112,7 +112,6 @@ nav {
 
 .actions-btn{
     padding-top: 30px;
-    display: flex;
     justify-content: center;
     gap: 25px;
 }
@@ -123,7 +122,7 @@ nav {
     border-radius: 40px;
 } 
 
-.open-in-browser {
+.black-btn {
     background-color: #23272a;
     color: white;
 }
@@ -131,18 +130,22 @@ nav {
 
 /*MAIN*/
 
+main {
+    font-size: 21px;
+}
+
 section {
     padding: 40px;
     display: flex;
     justify-content: center;
 }
 
-.odd-content {
+.white-background {
     background-color: #ffffff;
 }
 
-.even-content {
-    background-color:  #a7cfc2;
+.gray-background {
+    background-color:  #f6f6f6
 }
 
 .flex-container {
@@ -169,6 +172,16 @@ section {
     height: 800px;
     background-color: #478847;
     border: 3px dotted #234123
+}
+
+.flex-container h1 {
+    font-size: 50px;
+    color: #23272a;
+    padding: 30px 0;
+}
+
+.flex-container p {
+    color: #23272a;
 }
 
 /*FOOTER*/
