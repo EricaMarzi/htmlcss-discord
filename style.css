@@ -28,8 +28,8 @@ a {
     text-decoration: none;
 }
 
-a :hover {
-    text-decoration: underline; /* Capire perché non va*/
+a:hover {
+    text-decoration: underline; 
 }
 
 .flex {
@@ -37,7 +37,7 @@ a :hover {
 }
 
 
-/* Header */
+/*HEADER*/
 
 header {
     background-color: #255ee9;
@@ -108,7 +108,7 @@ nav {
     padding: 0 50px;
 }
 
-/*Specifiche bottoni jumbotron*/
+/* Specifiche bottoni jumbotron */
 
 .actions-btn{
     padding-top: 30px;
@@ -178,12 +178,15 @@ section {
     color: #23272a;
 }
 
-.onlychild-content > * {
-    text-align: center;
-}
-
+/* Specifica seconda sezione */
 .big-content.flex {
     justify-content: flex-end;
+}
+
+
+/* Sezione Grande */
+.onlychild-content > * {
+    text-align: center;
 }
 
 .image-big {
@@ -223,48 +226,61 @@ footer {
     width: 100%;
 }
 
-.upper, .bottom {
+.top, .bottom {
     margin: 0 auto;
     width: 1200px;
     display: flex;
 }
 
-.upper {
+.top {
     margin-bottom: 40px;
+    border-bottom: 1px solid #7289da; ;
 }
 
-
-#peach-box {
+.left-box {
     width: 30%;
-    height: 700px;
-    background-color: #e79a9a;
-    border: 3px dotted #a35959;
+    height: fit-content;
 }
 
-#acqua-box {
+.left-box > h2 {
+    font-size: 40px;
+    color: #7289da;
+    padding-top: 80px;
+    padding-right: 40px;
+}
+
+.right-box {
     width: 70%;
-    height: 700px;
-    background-color: #47b7b1;
-    border: 3px dotted #15837d;
+    height: fit-content;
+    padding-top: 80px;
+    padding-bottom: 20px;
     display: flex;
 }
 
 .col {
     width: calc(100% / 4);
-    border: 3px dotted #ffffff
+    line-height: 40px;
+}
+
+.col > h3 {
+    color: #7289da;
+}
+
+.col > ul {
+    font-size: 18px;
 }
 
 #bottom-footer {
-    background-color: #15837d;
-    margin: 20px auto 0 auto;
+    margin: 0 auto;
     width: 1200px;
-    padding: 20px 0;
+    padding-top: 10px;
+    padding-bottom: 50px;
     display: flex;
     justify-content: space-between;
 }
 
-.footer-content {
-    background-color: #a35959;
-    padding: 5px 10px;
-    border: 3px dotted #e79a9a;
+.sign-in {
+    font-size: 16px;
+    padding: 10px;
+    border-radius: 20px;
 }
