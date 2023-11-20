@@ -6,6 +6,24 @@
     font-family: Whitney, 'Helvetica Neue', Helvetica, Arial, sans-serif;
 }
 
+/*Utility*/
+
+ul {
+    list-style-type: none;
+}
+
+a {
+    text-decoration: none;
+}
+
+.flex {
+    display: flex;
+}
+
+li > a {
+    color: white;
+}
+
 /* HEADER*/
 
 header {
@@ -23,6 +41,7 @@ nav {
     height: 50px;
     background-color: #d5ad4a;
     display: flex;
+    align-items: center;
 }
 
 #link {
@@ -30,6 +49,11 @@ nav {
     border-top: 3px dotted #7c5a05;
     border-bottom: 3px dotted #7c5a05;
 }
+
+.list.flex {
+    justify-content: space-around;
+}
+
 
 #logo, #login {
     width: 25%;
