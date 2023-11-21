@@ -36,6 +36,32 @@ a:hover {
     display: flex;
 }
 
+.white-background {
+    background-color: #ffffff;
+}
+
+.gray-background {
+    background-color:  #f6f6f6
+}
+
+.small-btn {
+    font-size: 16px;
+    padding: 10px;
+    border-radius: 20px;
+}
+
+.blue-btn {
+    background-color: #8ea1e1;
+    color: white;
+    font-size: 20px;
+    padding: 15px 20px;
+    border-radius: 40px;
+}
+
+.black-btn {
+    background-color: #23272a;
+    color: white;
+}
 
 /*HEADER*/
 
@@ -45,15 +71,13 @@ header {
 
 nav {
     padding-top: 10px;
-    display: flex;
     justify-content: center;
 }
 
-#navigation-bar {
+.navigation-bar {
     margin: 15px;
     width: 1200px;
     height: 50px;
-    display: flex;
     align-items: center;
 }
 
@@ -71,13 +95,6 @@ nav {
 
 #login-container {
     text-align: right;
-}
-
-.login-btn {
-    background-color: white;
-    font-size: 16px;
-    padding: 10px;
-    border-radius: 20px;
 }
 
 /* Jumbotron */
@@ -122,19 +139,6 @@ nav {
     padding: 20px;
     border-radius: 40px;
 } 
-
-.black-btn {
-    background-color: #23272a;
-    color: white;
-}
-
-.white-background {
-    background-color: #ffffff;
-}
-
-.gray-background {
-    background-color:  #f6f6f6
-}
 
 /*MAIN*/
 
@@ -219,14 +223,6 @@ section {
     font-size: 30px;
     color: #23272a;
     margin-bottom: 30px;
-}
-
-.blue-btn {
-    background-color: #8ea1e1;
-    color: white;
-    font-size: 20px;
-    padding: 15px 20px;
-    border-radius: 40px;
 }
 
 /*FOOTER*/
@@ -326,7 +322,7 @@ select {
     justify-content: space-between;
 }
 
-.sign-in {
+.small-btn {
     font-size: 16px;
     padding: 10px;
     border-radius: 20px;
